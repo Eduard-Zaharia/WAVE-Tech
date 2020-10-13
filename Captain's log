@@ -1,6 +1,24 @@
-# WAVE-Tech
+# WAVE-Tech Requirments
 
-ADT: Acesta este primul meu mesaj pentru WAVE !!!!
-BCM: Acesta este primul LOG
+-Arhitectura -ADT
+-Schematic   -BCM 
+             ->Symbols,Footprints
+-BOM         -ADT
+             ->DIP(ADC)
+             ->Senzor Hall
+-Soft        -ZGE
 
-ZGE: a scris Zaha
+Descrierea Proiectului:Hardware
+13.10.2020->AC Power Metter cu WIFI si Data Logging pentru evolutia consumului in timp:
+               ->Alimentare de la AC = TRAF cu 2 secundare(6V Output)
+               ->Punte Redresoare cu DIODE Schottky
+               ->Filtrare AC(Bulk CAP + Decoupling CAP)
+               ->2 LDO:->5V & 3.3V ?
+               ->ADC-uri Externe Izolate
+               ->Senzor HALL
+               ->Divizor Rezistiv cu offset(Referinta de tensiune(LDO?))
+Descrierea Proiectului:Software
+13.10.2020->Driver SPI pentru ADC(Microcontroller || ADC Extern)
+          ->Functie de sampling pentru tensiune
+          ->Functie de sampling pentru curent
+          ->Formula de putere
