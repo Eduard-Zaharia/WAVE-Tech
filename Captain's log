@@ -22,3 +22,23 @@ Descrierea Proiectului:Software
           ->Functie de sampling pentru tensiune
           ->Functie de sampling pentru curent
           ->Formula de putere
+
+
+14.10.2020
+Problemute : 
+
+!TRANSFORMATOR 6V, 192mA 6V : Sinus amp 6 50 hz
+
+*Avem nevoie de 3v3 pe partea de digital. 
+2 Variante de rezolvare : 
+  1) Mai bagam un LDO de 3v3. 5V_D -> 5V_A (( OK ))
+  -) Mutam Hall si ADC_hall pe partea de 5V_A si sa transformarm 5V_D in 3v3_D (( NOK. SCUMP ))
+  COST LDO : 3LEI
+  
+** REFERINTA DE 2.5V e prea scumpa. LDO ? 
+Rezolvare : Punem o referinta ieftina ( 0.60 bani ) ca test. punem footprint de MCP pe langa just in case.
+
+FACTS:
+
+NO NEED FOR CH2 ADC
+Alegem adc-uri single channel ieftine : 9 lei ADC SPI 
